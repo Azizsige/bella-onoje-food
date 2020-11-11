@@ -1,0 +1,104 @@
+header {
+  height: 100px;
+  background-color: lightblue;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 1em;
+    margin-right: 2em;
+
+    .navbar-brand {
+      img {
+        width: 103px;
+        height: 50px;
+      }
+    }
+
+    .navbar-humberger {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      width: 15px;
+      height: 15px;
+      // border: 1px solid #000;
+      // padding: .4em;
+      position: relative;
+      z-index: 2;
+
+      input[type=checkbox] {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        transform: scale(3);
+        border-radius: 0px !important;
+        opacity: .0;
+      }
+
+      span {
+        width: 20px;
+        height: 1px;
+        background-color: #fff;
+        border: 1px solid #fff;
+      }
+
+      .line-one.active {
+        transform-origin: left center;
+        transform: rotate(35deg);
+        transition: all .3s;
+      }
+
+      .line-two.active {
+        width: 0px;
+        opacity: 0;
+        transition: all .3s;
+      }
+
+      .line-third.active {
+        transform-origin: left center;
+        transform: rotate(-35deg);
+        transition: all .3s;
+      }
+
+      .line-one.close {
+        transform-origin: left center;
+        transform: rotate(0deg);
+        transition: all .3s;
+      }
+
+      .line-two.close {
+        width: 20px;
+        opacity: 1;
+        transition: all .3s;
+      }
+
+      .line-third.close {
+        transform-origin: left center;
+        transform: rotate(0deg);
+        transition: all .3s;
+      }
+    }
+
+    .navbar-menu {
+      ul {
+        width: 400px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+
+        li {
+          a {
+            @include font('Monserrat', 600, 14px,$secondary-color);
+            text-decoration: none;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

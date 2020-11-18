@@ -5,4 +5,61 @@
   background-size: cover;
   object-fit: cover;
   object-position: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  h4 {
+    @include font('Monserrat', bold, 24px, #F6F6F6);
+    position: relative;
+    top: 2em;
+  }
+
+  h3 {
+    @include font('Poppins', bold, 58px, $alternate-colorSecondary);
+    position: relative;
+    top: -.5em;
+  }
+
+  h5{
+    @include font('Monserrat', 500, 24px, #F6F6F6);
+    position: relative;
+    top: -4.5em;
+  }
+
+  .jumbotron-button {
+    position: relative;
+    top: -7em;
+    .jumbotron-button__orange {
+      @include button();
+      border: 0 solid transparent;
+      width: 200px;
+      height: 58px;
+      cursor: pointer;
+
+      a {
+        color: $alternate-colorSecondary;
+        text-decoration-line: none;
+      }
+    }
+
+    .jumbotron-button__transparent {
+      @include button(transparent);
+      border: 1px solid $alternate-colorSecondary;
+      width: 200px;
+      height: 58px;
+      cursor: pointer;
+
+      &:hover {
+        @include button();
+        border: 0 solid transparent;
+      }
+
+      a {
+        color: $alternate-colorSecondary;
+        text-decoration-line: none;
+      }
+    }
+  }
 }

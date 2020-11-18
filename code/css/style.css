@@ -10,17 +10,8 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 100%; }
-    @media only screen and (min-width: 300px) and (max-width: 319px) {
-      header .navbar {
-        width: 100%;
-        position: relative;
-        z-index: 1;
-        margin-left: 0; } }
     header .navbar .navbar-brand {
       margin-left: 2em; }
-      @media only screen and (min-width: 300px) and (max-width: 319px) {
-        header .navbar .navbar-brand {
-          margin-left: 1em; } }
       header .navbar .navbar-brand img {
         width: 103px;
         height: 50px; }
@@ -33,12 +24,6 @@ header {
       height: 22px;
       position: relative;
       z-index: 2; }
-      @media only screen and (min-width: 300px) and (max-width: 319px) {
-        header .navbar .navbar-humberger {
-          top: 47px;
-          right: 5px;
-          display: flex;
-          position: absolute; } }
       header .navbar .navbar-humberger input[type=checkbox] {
         width: 30px;
         height: 22px;
@@ -90,30 +75,11 @@ header {
       header .navbar .navbar-menu.close {
         transition: all .7s ease;
         right: -100%; }
-      @media only screen and (min-width: 300px) and (max-width: 319px) {
-        header .navbar .navbar-menu {
-          display: block;
-          position: absolute;
-          background-color: #fff;
-          height: 100vh;
-          top: 0;
-          right: -100%;
-          width: 50%;
-          border: 1px solid #FA4A0C;
-          transition: .7s ease;
-          margin-right: 0; } }
       header .navbar .navbar-menu ul {
         width: 400px;
         display: flex;
         list-style: none;
         justify-content: space-between; }
-        @media only screen and (min-width: 300px) and (max-width: 319px) {
-          header .navbar .navbar-menu ul {
-            flex-direction: column;
-            width: 100%;
-            padding-left: 1em;
-            height: 100vh;
-            justify-content: space-evenly; } }
         header .navbar .navbar-menu ul li a {
           font-family: "Monserrat", sans-serif;
           font-weight: 600;
@@ -129,6 +95,207 @@ header {
   background-image: url("./../../assets/jumbotron.png");
   background-size: cover;
   object-fit: cover;
-  object-position: center; }
+  object-position: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center; }
+  .jumbotron h4 {
+    font-family: "Monserrat", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F6F6F6;
+    position: relative;
+    top: 2em; }
+  .jumbotron h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 58px;
+    color: #fff;
+    position: relative;
+    top: -.5em; }
+  .jumbotron h5 {
+    font-family: "Monserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #F6F6F6;
+    position: relative;
+    top: -4.5em; }
+  .jumbotron .jumbotron-button {
+    position: relative;
+    top: -7em; }
+    .jumbotron .jumbotron-button .jumbotron-button__orange {
+      background-color: #FA4A0C;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 30px;
+      border: 0 solid transparent;
+      width: 200px;
+      height: 58px;
+      cursor: pointer; }
+      .jumbotron .jumbotron-button .jumbotron-button__orange a {
+        color: #fff;
+        text-decoration-line: none; }
+    .jumbotron .jumbotron-button .jumbotron-button__transparent {
+      background-color: transparent;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 30px;
+      border: 1px solid #fff;
+      width: 200px;
+      height: 58px;
+      cursor: pointer; }
+      .jumbotron .jumbotron-button .jumbotron-button__transparent:hover {
+        background-color: #FA4A0C;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        border-radius: 30px;
+        border: 0 solid transparent; }
+      .jumbotron .jumbotron-button .jumbotron-button__transparent a {
+        color: #fff;
+        text-decoration-line: none; }
+
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  header .navbar {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: 0; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  header .navbar {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: 0; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  header .navbar {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: 0; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header .navbar {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: 0; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  header .navbar .navbar-brand {
+    margin-left: 1em; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  header .navbar .navbar-brand {
+    margin-left: 1em; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  header .navbar .navbar-brand {
+    margin-left: 1em; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header .navbar .navbar-brand {
+    margin-left: 1em; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  header .navbar .navbar-humberger {
+    top: 47px;
+    right: 5px;
+    display: flex;
+    position: absolute; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  header .navbar .navbar-humberger {
+    top: 47px;
+    right: 5px;
+    display: flex;
+    position: absolute; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  header .navbar .navbar-humberger {
+    top: 47px;
+    right: 5px;
+    display: flex;
+    position: absolute; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header .navbar .navbar-humberger {
+    top: 47px;
+    right: 5px;
+    display: flex;
+    position: absolute; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  header .navbar .navbar-menu {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    border: 1px solid #FA4A0C;
+    transition: .7s ease;
+    margin-right: 0; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  header .navbar .navbar-menu {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    border: 1px solid #FA4A0C;
+    transition: .7s ease;
+    margin-right: 0; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  header .navbar .navbar-menu {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    border: 1px solid #FA4A0C;
+    transition: .7s ease;
+    margin-right: 0; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header .navbar .navbar-menu {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    border: 1px solid #FA4A0C;
+    transition: .7s ease;
+    margin-right: 0; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  header .navbar .navbar-menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1em;
+    height: 100vh;
+    justify-content: space-evenly; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  header .navbar .navbar-menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1em;
+    height: 100vh;
+    justify-content: space-evenly; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  header .navbar .navbar-menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1em;
+    height: 100vh;
+    justify-content: space-evenly; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header .navbar .navbar-menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1em;
+    height: 100vh;
+    justify-content: space-evenly; } }
 
 /*# sourceMappingURL=style.css.map */

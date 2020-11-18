@@ -8,19 +8,8 @@ header {
     justify-content: space-between;
     height: 100%;
 
-    @include respond(xs) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
-    }
-
     .navbar-brand {
       margin-left: 2em;
-
-      @include respond(xs) {
-        margin-left: 1em;
-      }
 
       img {
         width: 103px;
@@ -37,13 +26,6 @@ header {
       height: 22px;
       position: relative;
       z-index: 2;
-
-      @include respond(xs) {
-        top: 47px;
-        right: 5px;
-        display: flex;
-        position: absolute;
-      }
 
       input[type=checkbox] {
         width: 30px;
@@ -120,32 +102,11 @@ header {
         right: -100%;
       }
 
-      @include respond(xs) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
       ul {
         width: 400px;
         display: flex;
         list-style: none;
         justify-content: space-between;
-
-        @include respond(xs) {
-          flex-direction: column;
-          width: 100%;
-          padding-left: 1em;
-          height: 100vh;
-          justify-content: space-evenly;
-        }
 
         li {
           a {

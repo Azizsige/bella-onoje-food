@@ -6,9 +6,9 @@
   font-weight: bold;
   font-size: 24px;
   border-radius: $b-radius;
-} 
+}
 
-@mixin font($name, $type, $size, $color){
+@mixin font($name, $type, $size, $color) {
   font-family: $name, sans-serif;
   font-weight: $type;
   font-size: $size;

@@ -92,12 +92,12 @@
 
       &.open {
         transition: all .7s ease;
-        right: 0;
+        transform: translateX(0);
       }
 
       &.close {
         transition: all .7s ease;
-        right: -100%;
+        transform: translateX(10em);
       }
 
       ul {

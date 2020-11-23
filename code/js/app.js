@@ -19,3 +19,5 @@ checkbox.addEventListener('click', () => {
   }
   });
 })
+
+document.body.scrollLeft = 0;

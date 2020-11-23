@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden !important; }
 
 .navbar {
   height: 100px;
@@ -69,10 +70,10 @@ body {
     margin-right: 2.5em; }
     .navbar .navbar-menu.open {
       transition: all .7s ease;
-      right: 0; }
+      transform: translateX(0); }
     .navbar .navbar-menu.close {
       transition: all .7s ease;
-      right: -100%; }
+      transform: translateX(10em); }
     .navbar .navbar-menu ul {
       width: 400px;
       display: flex;
@@ -159,9 +160,6 @@ body {
       .jumbotron .jumbotron-button .jumbotron-button__transparent a {
         color: #fff;
         text-decoration-line: none; }
-
-body {
-  overflow: hidden; }
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .navbar {

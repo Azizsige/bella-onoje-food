@@ -1,23 +1,22 @@
-const checkbox = document.getElementById('checkbox');
-const span = document.querySelectorAll('#span-hamburger');
-const hamburger = document.getElementById('hamburger');
-const menu = document.querySelector('.navbar-menu');
+const menuBtn = document.querySelector(".menu-btn");
+const menuItems = document.querySelector(".menu-items");
+const menuItem = document.querySelectorAll(".menu-item");
 
-checkbox.addEventListener('click', () => {
-  span.forEach(spans => {
-    if(checkbox.checked){
-    spans.classList.toggle('active');
-    spans.classList.remove('close');
-    menu.classList.toggle('open');
-    menu.classList.remove('close')
-    
-  } else {
-    spans.classList.toggle('close');
-    spans.classList.toggle('active');
-    menu.classList.toggle('open');
-    menu.classList.toggle('close');
-  }
+// main toggle
+menuBtn.addEventListener("click", () => {
+  toggle();
+});
+
+// toggle on item click if open
+menuItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (menuBtn.classList.contains("open")) {
+      toggle();
+    }
   });
-})
+});
 
-document.body.scrollLeft = 0;
+function toggle() {
+  menuBtn.classList.toggle("open");
+  menuItems.classList.toggle("open");
+}

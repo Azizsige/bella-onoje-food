@@ -1,172 +1,51 @@
-  .navbar {
-    @include respond(xs) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
-    }
-
-    @include respond(sm) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
-    }
-
-    @include respond(md) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
-    }
-
-    @include respond(lg) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
-    }
-
-    .navbar-brand {
-      @include respond(xs) {
-        margin-left: 1em;
-      }
-
-      @include respond(sm) {
-        margin-left: 1em;
-      }
-
-      @include respond(md) {
-        margin-left: 1em;
-      }
-
-      @include respond(lg) {
-        margin-left: 1em;
-      }
-    }
-
-    .navbar-humberger {
-      @include respond(xs) {
-        top: 47px;
-        right: 5px;
-        display: flex;
-        position: absolute;
-      }
-
-      @include respond(sm) {
-        top: 47px;
-        right: 5px;
-        display: flex;
-        position: absolute;
-      }
-
-      @include respond(md) {
-        top: 47px;
-        right: 5px;
-        display: flex;
-        position: absolute;
-      }
-
-      @include respond(lg) {
-        top: 47px;
-        right: 5px;
-        display: flex;
-        position: absolute;
-      }
-
-    }
-
-    .navbar-menu {
-      @include respond(xs) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: 0%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
-      @include respond(sm) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
-      @include respond(md) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
-      @include respond(lg) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
-      ul {
-        @include respond(xs) {
-          flex-direction: column;
-          width: 100%;
-          padding: 0;
-          height: 100vh;
-          justify-content: space-evenly;
-        }
-
-        @include respond(sm) {
-          flex-direction: column;
-          width: 100%;
-          padding-left: 1em;
-          height: 100vh;
-          justify-content: space-evenly;
-        }
-
-        @include respond(md) {
-          flex-direction: column;
-          width: 100%;
-          padding-left: 1em;
-          height: 100vh;
-          justify-content: space-evenly;
-        }
-
-        @include respond(lg) {
-          flex-direction: column;
-          width: 100%;
-          padding-left: 1em;
-          height: 100vh;
-          justify-content: space-evenly;
-        }
-
-        li {
-          @include respond(xs) {
-            margin-left: 1em;
-          }
-        }
-      }
-    }
+.menu-btn {
+  @include respond(xs) {
+    display: flex;
   }
+}
+
+.menu-items {
+  @include respond(xs) {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100vw);
+    background-color: #5a4d70;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.menu-items.open {
+  @include respond(xs) {
+    transform: translateX(0);
+  }
+}
+
+.menu-items li {
+  @include respond(xs) {
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+.menu-items li a {
+  @include respond(xs) {
+    color: #ffffff;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.menu-items li a:hover {
+  @include respond(xs) {
+    color: #111111;
+  }
+}

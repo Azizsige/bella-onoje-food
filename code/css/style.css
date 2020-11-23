@@ -26,7 +26,6 @@ body {
 
 .menu-items li a {
   font-size: 1rem;
-  padding: 0.5em 1em;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out; }
 
 .menu-items li a:hover {
@@ -202,45 +201,5 @@ body {
       .jumbotron .jumbotron-button .jumbotron-button__transparent a {
         color: #fff;
         text-decoration-line: none; }
-
-@media only screen and (min-width: 300px) and (max-width: 319px) {
-  .menu-btn {
-    display: flex; } }
-
-@media only screen and (min-width: 300px) and (max-width: 319px) {
-  .menu-items {
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    transform: translateX(100vw);
-    background-color: #5a4d70;
-    transition: transform 0.3s ease-in-out; } }
-
-@media only screen and (min-width: 300px) and (max-width: 319px) {
-  .menu-items.open {
-    transform: translateX(0); } }
-
-@media only screen and (min-width: 300px) and (max-width: 319px) {
-  .menu-items li {
-    width: 100vw;
-    height: 100%; } }
-
-@media only screen and (min-width: 300px) and (max-width: 319px) {
-  .menu-items li a {
-    color: #ffffff;
-    font-size: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%; } }
-
-@media only screen and (min-width: 300px) and (max-width: 319px) {
-  .menu-items li a:hover {
-    color: #111111; } }
 
 /*# sourceMappingURL=style.css.map */

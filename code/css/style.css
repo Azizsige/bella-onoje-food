@@ -116,7 +116,7 @@ body {
 
   .menu-items.open {
     width: 73%;
-    transform: translateX(5.5em); }
+    transform: translateX(5.5em) !important; }
 
   .menu-items li a {
     color: #ffffff;

@@ -9,6 +9,7 @@
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  display: none;
 
   h4 {
     @include font('Monserrat', bold, 24px, #F6F6F6);

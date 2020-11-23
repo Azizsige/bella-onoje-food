@@ -1,12 +1,10 @@
-header {
-  height: 100px;
-  background-color: $alternate-colorSecondary;
-
   .navbar {
+    height: 100px;
+    background-color: lightgreen;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+
 
     .navbar-brand {
       margin-left: 2em;
@@ -121,4 +119,3 @@ header {
       }
     }
   }
-}

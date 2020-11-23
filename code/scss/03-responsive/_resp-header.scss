@@ -1,4 +1,7 @@
-header {
+  body {
+    overflow: hidden;
+  }
+
   .navbar {
     @include respond(xs) {
       width: 100%;
@@ -84,7 +87,7 @@ header {
         background-color: #fff;
         height: 100vh;
         top: 0;
-        right: -100%;
+        right: 0%;
         width: 50%;
         border: 1px solid #FA4A0C;
         transition: .7s ease;
@@ -134,7 +137,7 @@ header {
         @include respond(xs) {
           flex-direction: column;
           width: 100%;
-          padding-left: 1em;
+          padding: 0;
           height: 100vh;
           justify-content: space-evenly;
         }
@@ -162,7 +165,12 @@ header {
           height: 100vh;
           justify-content: space-evenly;
         }
+
+        li {
+          @include respond(xs) {
+            margin-left: 1em;
+          }
+        }
       }
     }
   }
-}

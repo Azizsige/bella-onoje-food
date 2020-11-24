@@ -4,10 +4,6 @@ body {
   overflow: hidden !important; }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
@@ -77,8 +73,9 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
-  display: none; }
+  justify-content: flex-start; }
+  .jumbotron-thumb {
+    margin: 0 11em 0 11em; }
   .jumbotron h4 {
     font-family: "Monserrat", sans-serif;
     font-weight: bold;
@@ -90,66 +87,72 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 58px;
-    color: #fff;
-    position: relative;
-    top: -.5em; }
+    color: #fff; }
   .jumbotron h5 {
     font-family: "Monserrat", sans-serif;
     font-weight: 500;
     font-size: 24px;
-    color: #F6F6F6;
-    position: relative;
-    top: -4.5em; }
-  .jumbotron .jumbotron-button {
-    position: relative;
-    top: -7em; }
-    .jumbotron .jumbotron-button .jumbotron-button__orange {
+    color: #F6F6F6; }
+  .jumbotron .jumbotron-button__orange {
+    background-color: #FA4A0C;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 0 solid transparent;
+    width: 200px;
+    height: 58px;
+    cursor: pointer; }
+    .jumbotron .jumbotron-button__orange a {
+      color: #fff;
+      text-decoration-line: none; }
+  .jumbotron .jumbotron-button__transparent {
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    width: 200px;
+    height: 58px;
+    cursor: pointer;
+    margin-left: 7em; }
+    .jumbotron .jumbotron-button__transparent:hover {
       background-color: #FA4A0C;
       color: #fff;
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       font-size: 24px;
       border-radius: 30px;
-      border: 0 solid transparent;
-      width: 200px;
-      height: 58px;
-      cursor: pointer; }
-      .jumbotron .jumbotron-button .jumbotron-button__orange a {
-        color: #fff;
-        text-decoration-line: none; }
-    .jumbotron .jumbotron-button .jumbotron-button__transparent {
-      background-color: transparent;
+      border: 0 solid transparent; }
+    .jumbotron .jumbotron-button__transparent a {
       color: #fff;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      font-size: 24px;
-      border-radius: 30px;
-      border: 1px solid #fff;
-      width: 200px;
-      height: 58px;
-      cursor: pointer; }
-      .jumbotron .jumbotron-button .jumbotron-button__transparent:hover {
-        background-color: #FA4A0C;
-        color: #fff;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        font-size: 24px;
-        border-radius: 30px;
-        border: 0 solid transparent; }
-      .jumbotron .jumbotron-button .jumbotron-button__transparent a {
-        color: #fff;
-        text-decoration-line: none; }
+      text-decoration-line: none; }
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1em !important;
     align-items: center; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1em !important;
     align-items: center; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1em !important;
     align-items: center; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
@@ -188,7 +191,7 @@ body {
     right: 0;
     left: 0;
     height: 100vh;
-    transform: translateX(100vw);
+    transform: translateX(100%);
     background-color: #5a4d70;
     transition: transform 0.3s ease-in-out; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
@@ -272,5 +275,12 @@ body {
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   header li a:hover {
     color: #252B42; } }
+
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron {
+    width: 123% !important; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron .jumbotron-thumb {
+    margin: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */

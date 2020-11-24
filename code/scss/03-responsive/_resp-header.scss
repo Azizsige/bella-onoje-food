@@ -1,15 +1,27 @@
 header {
   @include respond(xs) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1em !important;
     align-items: center;
   }
 
   @include respond(sm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1em !important;
     align-items: center;
   }
 
   @include respond(md) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 1em !important;
     align-items: center;
   }
@@ -60,7 +72,7 @@ header {
       right: 0;
       left: 0;
       height: 100vh;
-      transform: translateX(100vw);
+      transform: translateX(100%);
       background-color: #5a4d70;
       transition: transform 0.3s ease-in-out;
     }
@@ -154,9 +166,11 @@ header {
         @include respond(xs) {
           color: $secondary-color;
         }
+
         @include respond(sm) {
           color: $secondary-color;
         }
+
         @include respond(md) {
           color: $secondary-color;
         }

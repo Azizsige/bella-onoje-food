@@ -1,0 +1,11 @@
+.jumbotron {
+  @include respond(xs) {
+    width: 123% !important;
+  }
+
+  .jumbotron-thumb {
+    @include respond(xs) {
+      margin: 0 !important;
+    }
+  }
+}

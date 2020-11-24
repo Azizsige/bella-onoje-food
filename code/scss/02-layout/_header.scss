@@ -8,145 +8,85 @@
   padding: 1rem 2rem;
   z-index: 1;
   backdrop-filter: blur(5px);
-}
 
-.header a {
-  text-decoration: none;
-  color: #111111;
-  font-size: 2rem;
-}
-
-.menu-items {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-.menu-items li a {
-  font-size: 1rem;
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.menu-items li a:hover {
-  background-color: #ccc7d3;
-}
-
-/* nav menu button */
-.menu-btn {
-  position: relative;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.menu-btn__lines,
-.menu-btn__lines::before,
-.menu-btn__lines::after {
-  width: 1.5rem;
-  height: 0.1rem;
-  background-color: #111111;
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-btn__lines::before,
-.menu-btn__lines::after {
-  content: "";
-  position: absolute;
-}
-
-.menu-btn__lines::before {
-  transform: translateY(-0.5rem);
-}
-
-.menu-btn__lines::after {
-  transform: translateY(0.5rem);
-}
-
-/* animation */
-.menu-btn.open .menu-btn__lines {
-  transform: translateX(2rem);
-  background-color: transparent;
-}
-
-.menu-btn.open .menu-btn__lines::before {
-  transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-  background-color: #ffffff;
-}
-
-.menu-btn.open .menu-btn__lines::after {
-  transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-  background-color: #ffffff;
-}
-
-/* media query for tablet devices */
-@media (max-width: 1023px) {
-  .custom-shape-divider svg {
-    width: calc(200% + 1.3px);
-    height: 150px;
-  }
-
-  .hero-col {
-    max-width: 100%;
-    width: clamp(300px, 50vw, 600px);
-    padding: 0;
-  }
-
-  .hero-img {
-    display: none;
-  }
-}
-
-/* media query for mobile devices */
-@media (max-width: 767px) {
-  .custom-shape-divider svg {
-    width: calc(250% + 1.3px);
-    height: 150px;
-  }
-
-  .header a {
-    font-size: 1rem;
+  img {
+    width: 206px;
+    height: 101px;
+    ;
   }
 
   .menu-btn {
-    display: flex;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+
+    .menu-btn__lines,
+    .menu-btn__lines::before,
+    .menu-btn__lines::after {
+      width: 1.5rem;
+      height: 0.1rem;
+      background-color: #111111;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .menu-btn__lines::before,
+    .menu-btn__lines::after {
+      content: "";
+      position: absolute;
+    }
+
+    .menu-btn__lines::before {
+      transform: translateY(-0.5rem);
+    }
+
+    .menu-btn__lines::after {
+      transform: translateY(0.5rem);
+    }
+
+    &.open {
+      .menu-btn__lines {
+        transform: translateX(2rem);
+        background-color: transparent;
+      }
+
+      .menu-btn__lines::before {
+        transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+        background-color: #ffffff;
+      }
+
+      .menu-btn__lines::after {
+        transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 2rem;
+    @include font('Monserrat', 600, 16px, $secondary-color);
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   .menu-items {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    transform: translateX(100vw);
-    background-color: #5a4d70;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .menu-items.open {
-    width: 73%;
-    transform: translateX(5.5em) !important;
-  }
-
-  .menu-items li a {
-    color: #ffffff;
-    font-size: 5vh;
+    list-style: none;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-  }
 
-  .menu-items li a:hover {
-    color: #111111;
+    li {
+      a {
+        font-size: 1rem;
+        padding: 0.5em 1em;
+      }
+    }
   }
 }

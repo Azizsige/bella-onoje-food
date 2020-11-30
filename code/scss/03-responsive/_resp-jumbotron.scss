@@ -66,9 +66,30 @@
         margin: 1.5em 0 -0.5em 0;
       }
     }
+
+    h5 {
+      @include respond(xs) {
+        font-size: 1.1em !important;
+      }
+
+      @include respond(sm) {
+        font-size: 1.1em !important;
+      }
+
+      @include respond(md) {
+        font-size: 1.1em !important;
+      }
+    }
   }
 
   &-button {
+    @include respond(sm) {
+      flex-direction: column;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center;
+    }
+
     &__transparent {
       @include respond(xs) {
         margin: auto !important;

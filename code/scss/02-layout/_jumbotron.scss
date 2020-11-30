@@ -28,8 +28,7 @@
 
   h5 {
     @include font('Monserrat', 500, 24px, #F6F6F6);
-    margin: 0 !important;
-    margin-bottom: 2em !important;
+    margin: 0 0 2em 0 !important;
   }
 
   .jumbotron-button {

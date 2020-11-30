@@ -95,8 +95,7 @@ body {
     font-weight: 500;
     font-size: 24px;
     color: #F6F6F6;
-    margin: 0 !important;
-    margin-bottom: 2em !important; }
+    margin: 0 0 2em 0 !important; }
   .jumbotron .jumbotron-button__orange {
     background-color: #FA4A0C;
     color: #fff;
@@ -224,6 +223,7 @@ body {
     top: 0;
     right: 0;
     left: 0;
+    height: 123vh !important;
     transform: translateX(100vw);
     background-color: #5a4d70;
     transition: transform 0.3s ease-in-out; } }
@@ -330,6 +330,21 @@ body {
   .jumbotron .jumbotron-thumb h3 {
     font-size: 34px;
     margin: 1.5em 0 -0.5em 0; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron .jumbotron-thumb h5 {
+    font-size: 1.1em !important; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .jumbotron .jumbotron-thumb h5 {
+    font-size: 1.1em !important; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .jumbotron .jumbotron-thumb h5 {
+    font-size: 1.1em !important; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .jumbotron-button {
+    flex-direction: column;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .jumbotron-button__transparent {
     margin: auto !important;

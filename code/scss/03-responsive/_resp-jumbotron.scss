@@ -1,1 +1,48 @@
+.jumbotron {
+  @include respond(xs) {
+    width: 123% !important;
+    position: relative;
+    top: 6em;
+  }
 
+  .jumbotron-thumb {
+    @include respond(xs) {
+      margin: 0 !important;
+    }
+
+    h4 {
+      @include respond(xs) {
+        font-size: 20px;
+      }
+    }
+
+    h3 {
+      @include respond(xs) {
+        font-size: 34px;
+        margin: 1.5em 0 -0.5em 0;
+      }
+    }
+  }
+
+  &-button {
+    &__transparent {
+      @include respond(xs) {
+        margin: auto !important;
+        border: 1px solid #FA4A0C !important;
+        margin-top: 1em !important;
+      }
+
+      a {
+        @include respond(xs) {
+          color: $primary-color !important;
+        }
+      }
+
+      &:hover {
+        @include respond(xs) {
+          background-color: $alternate-colorSecondary;
+        }
+      }
+    }
+  }
+}

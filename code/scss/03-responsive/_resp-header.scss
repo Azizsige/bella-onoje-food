@@ -1,166 +1,178 @@
 header {
-  .navbar {
+  @include respond(xs) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em !important;
+    align-items: center;
+  }
+
+  @include respond(sm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em !important;
+    align-items: center;
+  }
+
+  @include respond(md) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em !important;
+    align-items: center;
+  }
+
+  img {
     @include respond(xs) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
+      width: 130px !important;
+      height: 50px !important;
+      margin-left: -.7em;
     }
 
     @include respond(sm) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
+      width: 130px !important;
+      height: 50px !important;
+      margin-left: -.7em;
     }
 
     @include respond(md) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
+      width: 130px !important;
+      height: 50px !important;
+      margin-left: -.7em;
+    }
+  }
+
+  .menu-btn {
+    @include respond(xs) {
+      display: flex !important;
     }
 
-    @include respond(lg) {
-      width: 100%;
-      position: relative;
-      z-index: 1;
-      margin-left: 0;
+    @include respond(sm) {
+      display: flex !important;
     }
 
-    .navbar-brand {
+    @include respond(md) {
+      display: flex !important;
+    }
+  }
+
+  .menu-items {
+    @include respond(xs) {
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100vh;
+      transform: translateX(100%);
+      background-color: #5a4d70;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @include respond(sm) {
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100vh;
+      transform: translateX(100vw);
+      background-color: #5a4d70;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @include respond(md) {
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100vh;
+      transform: translateX(100vw);
+      background-color: #5a4d70;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &.open {
       @include respond(xs) {
-        margin-left: 1em;
+        width: 73%;
+        transform: translateX(6.5em) !important;
       }
 
       @include respond(sm) {
-        margin-left: 1em;
+        width: 73%;
+        transform: translateX(6.5em) !important;
       }
 
       @include respond(md) {
-        margin-left: 1em;
-      }
-
-      @include respond(lg) {
-        margin-left: 1em;
+        width: 73%;
+        transform: translateX(51%) !important;
       }
     }
+  }
 
-    .navbar-humberger {
+  li {
+    a {
       @include respond(xs) {
-        top: 47px;
-        right: 5px;
+        color: #ffffff !important;
+        font-size: 5vh;
         display: flex;
-        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
       }
 
       @include respond(sm) {
-        top: 47px;
-        right: 5px;
+        color: #ffffff !important;
+        font-size: 5vh;
         display: flex;
-        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
       }
 
       @include respond(md) {
-        top: 47px;
-        right: 5px;
+        color: #ffffff !important;
+        font-size: 5vh;
         display: flex;
-        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
       }
 
-      @include respond(lg) {
-        top: 47px;
-        right: 5px;
-        display: flex;
-        position: absolute;
-      }
-
-    }
-
-    .navbar-menu {
-      @include respond(xs) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
-      @include respond(sm) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
-      @include respond(md) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
-      @include respond(lg) {
-        display: block;
-        position: absolute;
-        background-color: #fff;
-        height: 100vh;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        border: 1px solid #FA4A0C;
-        transition: .7s ease;
-        margin-right: 0;
-      }
-
-      ul {
+      &:hover {
         @include respond(xs) {
-          flex-direction: column;
-          width: 100%;
-          padding-left: 1em;
-          height: 100vh;
-          justify-content: space-evenly;
+          color: $secondary-color;
         }
 
         @include respond(sm) {
-          flex-direction: column;
-          width: 100%;
-          padding-left: 1em;
-          height: 100vh;
-          justify-content: space-evenly;
+          color: $secondary-color;
         }
 
         @include respond(md) {
-          flex-direction: column;
-          width: 100%;
-          padding-left: 1em;
-          height: 100vh;
-          justify-content: space-evenly;
-        }
-
-        @include respond(lg) {
-          flex-direction: column;
-          width: 100%;
-          padding-left: 1em;
-          height: 100vh;
-          justify-content: space-evenly;
+          color: $secondary-color;
         }
       }
     }

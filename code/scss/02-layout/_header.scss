@@ -1,123 +1,87 @@
-header {
-  height: 100px;
-  background-color: $alternate-colorSecondary;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1;
+  backdrop-filter: blur(5px);
 
-  .navbar {
+  img {
+    width: 206px;
+    height: 101px;
+    ;
+  }
+
+  .menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+
+    .menu-btn__lines,
+    .menu-btn__lines::before,
+    .menu-btn__lines::after {
+      width: 1.5rem;
+      height: 0.1rem;
+      background-color: #111111;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .menu-btn__lines::before,
+    .menu-btn__lines::after {
+      content: "";
+      position: absolute;
+    }
+
+    .menu-btn__lines::before {
+      transform: translateY(-0.5rem);
+    }
+
+    .menu-btn__lines::after {
+      transform: translateY(0.5rem);
+    }
+
+    &.open {
+      .menu-btn__lines {
+        transform: translateX(2rem);
+        background-color: transparent;
+      }
+
+      .menu-btn__lines::before {
+        transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+        background-color: #ffffff;
+      }
+
+      .menu-btn__lines::after {
+        transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 2rem;
+    @include font('Monserrat', 600, 16px, $secondary-color);
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .menu-items {
+    list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 100%;
 
-    .navbar-brand {
-      margin-left: 2em;
-
-      img {
-        width: 103px;
-        height: 50px;
-      }
-    }
-
-    .navbar-humberger {
-      display: none;
-      flex-direction: column;
-      justify-content: space-evenly;
-      margin-right: 2em;
-      width: 30px;
-      height: 22px;
-      position: relative;
-      z-index: 2;
-
-      input[type=checkbox] {
-        width: 30px;
-        height: 22px;
-        position: absolute;
-        z-index: 1;
-        right: 0;
-        left: -3px;
-        transform: scale(1);
-        border-radius: 0px !important;
-        opacity: .0;
-        bottom: 0;
-        top: -3px;
-
-        &:checked .navbar-menu {
-          right: 0;
-        }
-      }
-
-      span {
-        width: 20px;
-        height: 1px;
-        background-color: #000;
-        border: 1px solid #000;
-      }
-
-      .line-one.active {
-        transform-origin: 0 0.4em;
-        transform: rotate(35deg);
-        transition: all .3s;
-      }
-
-      .line-two.active {
-        width: 0px;
-        opacity: 0;
-        transition: all .3s;
-      }
-
-      .line-third.active {
-        transform-origin: 0.1em 0em;
-        transform: rotate(-35deg);
-        transition: all .3s
-      }
-
-      .line-one.close {
-        transform-origin: left center;
-        transform: rotate(0deg);
-        transition: all .3s;
-      }
-
-      .line-two.close {
-        width: 20px;
-        opacity: 1;
-        transition: all .3s;
-      }
-
-      .line-third.close {
-        transform-origin: left center;
-        transform: rotate(0deg);
-        transition: all .3s;
-      }
-    }
-
-    .navbar-menu {
-      margin-right: 2.5em;
-
-      &.open {
-        transition: all .7s ease;
-        right: 0;
-      }
-
-      &.close {
-        transition: all .7s ease;
-        right: -100%;
-      }
-
-      ul {
-        width: 400px;
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-
-        li {
-          a {
-            @include font('Monserrat', 600, 14px, $secondary-color);
-            text-decoration: none;
-
-            &:hover {
-              color: $primary-color;
-            }
-          }
-        }
+    li {
+      a {
+        font-size: 1rem;
+        padding: 0.5em 1em;
       }
     }
   }

@@ -286,6 +286,18 @@ body {
     width: 123% !important;
     position: relative;
     top: 6em; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .jumbotron {
+    height: 107vh;
+    width: 123% !important;
+    position: relative;
+    top: 6em; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .jumbotron {
+    height: 107vh;
+    width: 123% !important;
+    position: relative;
+    top: 6em; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .jumbotron .jumbotron-thumb {
     margin: 0 !important;

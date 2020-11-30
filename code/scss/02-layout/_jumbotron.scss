@@ -10,23 +10,26 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  &-thumb{
-    margin: 0 11em 0 11em;
+  &-thumb {
+    margin-top: 3em;
   }
 
   h4 {
     @include font('Monserrat', bold, 24px, #F6F6F6);
-    position: relative;
-    top: 2em;
+    margin: 0 !important;
+    margin-bottom: .5em !important;
   }
 
   h3 {
     @include font('Poppins', bold, 58px, $alternate-colorSecondary);
-    
+    margin: 0 !important;
+    margin-bottom: .5em !important;
   }
 
-  h5{
+  h5 {
     @include font('Monserrat', 500, 24px, #F6F6F6);
+    margin: 0 !important;
+    margin-bottom: 2em !important;
   }
 
   .jumbotron-button {
@@ -49,7 +52,7 @@
       width: 200px;
       height: 58px;
       cursor: pointer;
-      margin-left: 7em;
+      margin-left: 1em;
 
       &:hover {
         @include button();

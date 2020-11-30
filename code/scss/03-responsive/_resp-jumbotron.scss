@@ -1,5 +1,6 @@
 .jumbotron {
   @include respond(xs) {
+   height: 107vh;
     width: 123% !important;
     position: relative;
     top: 6em;

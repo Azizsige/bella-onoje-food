@@ -87,8 +87,8 @@ header {
       top: 0;
       right: 0;
       left: 0;
-      height: 100vh;
-      transform: translateX(100vw);
+      height: 123vh !important;
+      transform: translateX(100%);
       background-color: #5a4d70;
       transition: transform 0.3s ease-in-out;
     }
@@ -103,7 +103,7 @@ header {
       top: 0;
       right: 0;
       left: 0;
-      height: 100vh;
+      height: 123vh !important;
       transform: translateX(100vw);
       background-color: #5a4d70;
       transition: transform 0.3s ease-in-out;
@@ -112,17 +112,17 @@ header {
     &.open {
       @include respond(xs) {
         width: 73%;
-        transform: translateX(6.5em) !important;
+        transform: translateX(8.5em) !important;
       }
 
       @include respond(sm) {
         width: 73%;
-        transform: translateX(6.5em) !important;
+        transform: translateX(8.5em) !important;
       }
 
       @include respond(md) {
         width: 73%;
-        transform: translateX(51%) !important;
+        transform: translateX(8.5em) !important;
       }
     }
   }

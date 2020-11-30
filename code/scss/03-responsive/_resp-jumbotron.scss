@@ -1,6 +1,6 @@
 .jumbotron {
   @include respond(xs) {
-   height: 107vh;
+    height: 107vh;
     width: 123% !important;
     position: relative;
     top: 6em;
@@ -9,16 +9,41 @@
   .jumbotron-thumb {
     @include respond(xs) {
       margin: 0 !important;
+      margin-top: 3em !important;
+    }
+
+    @include respond(sm) {
+      margin: 0 !important;
+      margin-top: 3em !important;
+    }
+
+    @include respond(md) {
+      margin: 0 !important;
+      margin-top: 3em !important;
     }
 
     h4 {
       @include respond(xs) {
         font-size: 20px;
       }
+      @include respond(sm) {
+        font-size: 20px;
+      }
+      @include respond(md) {
+        font-size: 20px;
+      }
     }
 
     h3 {
       @include respond(xs) {
+        font-size: 34px;
+        margin: 1.5em 0 -0.5em 0;
+      }
+      @include respond(sm) {
+        font-size: 34px;
+        margin: 1.5em 0 -0.5em 0;
+      }
+      @include respond(md) {
         font-size: 34px;
         margin: 1.5em 0 -0.5em 0;
       }
@@ -32,15 +57,37 @@
         border: 1px solid #FA4A0C !important;
         margin-top: 1em !important;
       }
+      @include respond(sm) {
+        margin: auto !important;
+        border: 1px solid #FA4A0C !important;
+        margin-top: 1em !important;
+      }
+      @include respond(md) {
+        margin: auto !important;
+        border: 1px solid #FA4A0C !important;
+        margin-top: 1em !important;
+      }
 
       a {
         @include respond(xs) {
+          color: $primary-color !important;
+        }
+        @include respond(sm) {
+          color: $primary-color !important;
+        }
+        @include respond(md) {
           color: $primary-color !important;
         }
       }
 
       &:hover {
         @include respond(xs) {
+          background-color: $alternate-colorSecondary;
+        }
+        @include respond(sm) {
+          background-color: $alternate-colorSecondary;
+        }
+        @include respond(md) {
           background-color: $alternate-colorSecondary;
         }
       }

@@ -1,0 +1,7 @@
+.imageThumb {
+  img {
+    @include respond(xs){
+      width: 100% !important;
+    }
+  }
+}

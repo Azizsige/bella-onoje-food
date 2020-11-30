@@ -278,9 +278,29 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .jumbotron {
-    width: 123% !important; } }
+    width: 123% !important;
+    position: relative;
+    top: 6em; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .jumbotron .jumbotron-thumb {
     margin: 0 !important; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron .jumbotron-thumb h4 {
+    font-size: 20px; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron .jumbotron-thumb h3 {
+    font-size: 34px;
+    margin: 1.5em 0 -0.5em 0; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron-button__transparent {
+    margin: auto !important;
+    border: 1px solid #FA4A0C !important;
+    margin-top: 1em !important; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron-button__transparent a {
+    color: #FA4A0C !important; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron-button__transparent:hover {
+    background-color: #fff; } }
 
 /*# sourceMappingURL=style.css.map */

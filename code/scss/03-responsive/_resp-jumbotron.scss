@@ -1,13 +1,13 @@
 .jumbotron {
   @include respond(xs) {
-    height: 107vh;
+    height: 90vh !important;
     width: 123% !important;
     position: relative;
     top: 6em;
   }
 
   @include respond(sm) {
-    height: 107vh;
+    height: 90vh !important;
     width: 123% !important;
     position: relative;
     top: 6em;

@@ -296,13 +296,13 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .jumbotron {
-    height: 107vh;
+    height: 90vh !important;
     width: 123% !important;
     position: relative;
     top: 6em; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   .jumbotron {
-    height: 107vh;
+    height: 90vh !important;
     width: 123% !important;
     position: relative;
     top: 6em; } }
@@ -401,7 +401,46 @@ body {
     background-color: #fff; } }
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
+  .imageThumb {
+    top: -0.5em !important;
+    left: 1em; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .imageThumb {
+    top: -0.5em !important;
+    left: 1em; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .imageThumb {
+    top: -0.5em !important;
+    left: 1em; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
   .imageThumb img {
     width: 100% !important; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .imageThumb img {
+    width: 100% !important; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .imageThumb img {
+    width: 100% !important; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .imageThumb span {
+    width: auto !important;
+    left: 1em !important;
+    position: relative;
+    top: -1.5em;
+    width: auto !important; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .imageThumb span {
+    width: auto !important;
+    left: 1em !important;
+    position: relative;
+    top: -1.5em;
+    width: auto !important; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .imageThumb span {
+    width: auto !important;
+    left: 1em !important;
+    position: relative;
+    top: -1.5em;
+    width: auto !important; } }
 
 /*# sourceMappingURL=style.css.map */

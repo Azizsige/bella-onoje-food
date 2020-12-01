@@ -1,7 +1,56 @@
 .imageThumb {
+  @include respond(xs) {
+    top: -0.5em !important;
+    left: 1em;
+  }
+
+  @include respond(sm) {
+    top: -0.5em !important;
+    left: 1em;
+  }
+
+  @include respond(md) {
+    top: -0.5em !important;
+    left: 1em;
+  }
+
   img {
-    @include respond(xs){
+    @include respond(xs) {
       width: 100% !important;
+    }
+
+    @include respond(sm) {
+      width: 100% !important;
+    }
+
+    @include respond(md) {
+      width: 100% !important;
+    }
+  }
+
+  span {
+    @include respond(xs) {
+      width: auto !important;
+      left: 1em !important;
+      position: relative;
+      top: -1.5em;
+      width: auto !important;
+    }
+
+    @include respond(sm) {
+      width: auto !important;
+      left: 1em !important;
+      position: relative;
+      top: -1.5em;
+      width: auto !important;
+    }
+
+    @include respond(md) {
+      width: auto !important;
+      left: 1em !important;
+      position: relative;
+      top: -1.5em;
+      width: auto !important;
     }
   }
 }

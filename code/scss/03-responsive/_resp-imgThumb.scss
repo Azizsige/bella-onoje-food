@@ -1,47 +1,40 @@
 .imageThumb {
   @include respond(xs) {
-    top: -0.5em !important;
-    left: 1em;
-  }
-
-  @include respond(sm) {
-    top: -0.5em !important;
-    left: 1em;
-  }
-
-  @include respond(md) {
-    top: -3.5em !important;
-    left: 2em;
+    height: auto !important;
   }
 
   img {
     @include respond(xs) {
+      top: 1.5em !important;
+      left: 1em;
       width: 100% !important;
     }
 
     @include respond(sm) {
+      top: 1.5em !important;
+      left: 1em;
       width: 100% !important;
     }
 
     @include respond(md) {
+      top: -3.5em !important;
+      left: 2em;
       width: 100% !important;
     }
   }
 
   span {
     @include respond(xs) {
-      width: auto !important;
-      left: 1em !important;
       position: relative;
-      top: -1.5em;
+      left: 2em;
+      margin-top: 0em !important;
       width: auto !important;
     }
 
     @include respond(sm) {
-      width: auto !important;
-      left: 1em !important;
       position: relative;
-      top: -1.5em;
+      left: 2em;
+      margin-top: 0em !important;
       width: auto !important;
     }
 
@@ -50,7 +43,6 @@
       left: 1em !important;
       position: relative;
       top: -1.5em;
-      width: auto !important;
     }
   }
 }

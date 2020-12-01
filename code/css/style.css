@@ -100,7 +100,7 @@ body {
     margin: 0 0 2em 0 !important; }
   .jumbotron .jumbotron-button {
     position: relative !important;
-    z-index: 1 !important; }
+    z-index: 1; }
     .jumbotron .jumbotron-button__orange {
       background-color: #FA4A0C;
       color: #fff;
@@ -141,13 +141,14 @@ body {
         text-decoration-line: none; }
 
 .imageThumb {
+  height: auto !important;
   text-align: center !important; }
   .imageThumb img {
     position: relative;
     top: -13em;
     left: 0em; }
   .imageThumb span {
-    margin: auto;
+    margin: -14em auto auto auto !important;
     display: block;
     width: 884px !important;
     height: 3px;
@@ -156,6 +157,36 @@ body {
 .procedure {
   height: 403px;
   height: 100%; }
+  .procedure-headline {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    color: #000;
+    text-align: center;
+    margin: 1em 0 0 0; }
+  .procedure-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3em; }
+    .procedure-row__explanation h5 {
+      font-family: "Monserrat", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #FA4A0C;
+      margin: 0; }
+    .procedure-row__explanation h4 {
+      font-family: "Monserrat", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      color: #252B42;
+      margin: 1em 0; }
+    .procedure-row__explanation p {
+      font-family: "Monserrat", sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      color: #737373;
+      margin-right: 2em; }
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   header {
@@ -362,18 +393,23 @@ body {
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .jumbotron .jumbotron-thumb h5 {
     font-size: 1.1em !important; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .jumbotron-button {
+    z-index: 0 !important; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   .jumbotron-button {
     flex-direction: column;
     display: flex !important;
     justify-content: center !important;
-    align-items: center; } }
+    align-items: center;
+    z-index: 0 !important; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .jumbotron-button {
     flex-direction: column;
     display: flex !important;
     justify-content: center !important;
-    align-items: center; } }
+    align-items: center;
+    z-index: 0 !important; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .jumbotron-button__transparent {
     margin: auto !important;
@@ -410,45 +446,39 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .imageThumb {
-    top: -0.5em !important;
-    left: 1em; } }
+    height: auto !important; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .imageThumb img {
+    top: 1.5em !important;
+    left: 1em;
+    width: 100% !important; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
-  .imageThumb {
-    top: -0.5em !important;
-    left: 1em; } }
+  .imageThumb img {
+    top: 1.5em !important;
+    left: 1em;
+    width: 100% !important; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
-  .imageThumb {
+  .imageThumb img {
     top: -3.5em !important;
-    left: 2em; } }
-@media only screen and (min-width: 300px) and (max-width: 319px) {
-  .imageThumb img {
-    width: 100% !important; } }
-@media only screen and (min-width: 320px) and (max-width: 359px) {
-  .imageThumb img {
-    width: 100% !important; } }
-@media only screen and (min-width: 360px) and (max-width: 479px) {
-  .imageThumb img {
+    left: 2em;
     width: 100% !important; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .imageThumb span {
-    width: auto !important;
-    left: 1em !important;
     position: relative;
-    top: -1.5em;
+    left: 2em;
+    margin-top: 0em !important;
     width: auto !important; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   .imageThumb span {
-    width: auto !important;
-    left: 1em !important;
     position: relative;
-    top: -1.5em;
+    left: 2em;
+    margin-top: 0em !important;
     width: auto !important; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .imageThumb span {
     width: auto !important;
     left: 1em !important;
     position: relative;
-    top: -1.5em;
-    width: auto !important; } }
+    top: -1.5em; } }
 
 /*# sourceMappingURL=style.css.map */

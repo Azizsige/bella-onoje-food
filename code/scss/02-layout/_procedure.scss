@@ -1,4 +1,34 @@
 .procedure {
   height: 403px;
   height: 100%;
+
+  &-headline {
+    @include font('Poppins', 600, 44px, $alternate-colorDefault);
+    text-align: center;
+    margin: 1em 0 0 0;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3em;
+
+    &__explanation{
+      h5 {
+        @include font('Monserrat', 700, 36px, $primary-color);
+        margin: 0;
+      }
+
+      h4 {
+        @include font('Monserrat', 700, 40px, $secondary-color);
+        margin: 1em 0;
+      }
+
+      p {
+        @include font('Monserrat', 500, 24px, $text-color);
+        margin-right: 2em;
+      }
+    }
+  }
 }

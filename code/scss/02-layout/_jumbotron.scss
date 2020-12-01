@@ -39,7 +39,7 @@
 
   .jumbotron-button {
     position: relative !important;
-    z-index: 1 !important;
+    z-index: 1;
 
     &__orange {
       @include button();

@@ -1,9 +1,11 @@
 .jumbotron {
   @include respond(xs) {
+    justify-content: flex-start;
     height: 90vh !important;
     width: 123% !important;
     position: relative;
     top: 6em;
+    align-items: normal !important;
   }
 
   @include respond(sm) {
@@ -11,13 +13,17 @@
     width: 123% !important;
     position: relative;
     top: 6em;
+    justify-content: flex-start;
+    align-items: normal !important;
   }
 
   @include respond(md) {
-    height: 82vh;
+    height: 82vh !important;
     width: 123% !important;
     position: relative;
     top: 6em;
+    justify-content: flex-start;
+    align-items: normal !important;
   }
 
   .jumbotron-thumb {
@@ -53,17 +59,17 @@
     h3 {
       @include respond(xs) {
         font-size: 2em;
-        margin: 1.5em 0 -0.5em 0;
+        margin: 0.5em 0 0.5em 0 !important;
       }
 
       @include respond(sm) {
         font-size: 2em;
-        margin: 1.5em 0 -0.5em 0;
+        margin: 0.5em 0 0.5em 0 !important;
       }
 
       @include respond(md) {
-        font-size: 1.2em;
-        margin: 1.5em 0 -0.5em 0;
+        font-size: 2em;
+        margin: 0.5em 0 0.5em 0 !important;
       }
     }
 

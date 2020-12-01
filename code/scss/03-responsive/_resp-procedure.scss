@@ -1,0 +1,11 @@
+.procedure-row {
+  @include respond(xs){
+    flex-direction: column;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+}

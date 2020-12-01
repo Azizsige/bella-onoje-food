@@ -482,9 +482,12 @@ body {
     top: -1.5em; } }
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
+  .procedure-headline {
+    text-align: center !important; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
   .procedure-row {
     flex-direction: column; } }
 .procedure-row__image img {
-  width: 100%; }
+  width: 156%; }
 
 /*# sourceMappingURL=style.css.map */

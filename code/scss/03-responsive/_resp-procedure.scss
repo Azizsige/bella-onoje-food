@@ -1,11 +1,19 @@
-.procedure-row {
-  @include respond(xs){
-    flex-direction: column;
+.procedure {
+  @include respond(xs) {
+    &-headline {
+      text-align: center !important;
+    }
   }
 
-  &__image {
-    img {
-      width: 100%;
+  &-row {
+    @include respond(xs) {
+      flex-direction: column;
+    }
+
+    &__image {
+      img {
+        width: 156%;
+      }
     }
   }
 }

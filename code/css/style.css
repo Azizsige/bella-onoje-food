@@ -141,10 +141,11 @@ body {
         text-decoration-line: none; }
 
 .imageThumb {
-  position: relative;
-  top: -13em;
-  left: 0em;
-  text-align: center; }
+  text-align: center !important; }
+  .imageThumb img {
+    position: relative;
+    top: -13em;
+    left: 0em; }
   .imageThumb span {
     margin: auto;
     display: block;
@@ -152,6 +153,10 @@ body {
     height: 3px;
     background-color: #E4E4E4; }
 
+.procedure {
+  height: 403px;
+  height: 100%; }
+
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   header {
     position: fixed;
@@ -299,28 +304,22 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .jumbotron {
-    justify-content: flex-start;
     height: 90vh !important;
     width: 123% !important;
     position: relative;
-    top: 6em;
-    align-items: normal !important; } }
+    top: 6em; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   .jumbotron {
     height: 90vh !important;
     width: 123% !important;
     position: relative;
-    top: 6em;
-    justify-content: flex-start;
-    align-items: normal !important; } }
+    top: 6em; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .jumbotron {
-    height: 82vh !important;
+    height: 82vh;
     width: 123% !important;
     position: relative;
-    top: 6em;
-    justify-content: flex-start;
-    align-items: normal !important; } }
+    top: 6em; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .jumbotron .jumbotron-thumb {
     margin: 0 !important;

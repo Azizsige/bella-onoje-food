@@ -1,9 +1,12 @@
 .imageThumb {
-  position: relative;
-  top: -13em;
-  left: 0em;
-  text-align: center;
-   
+  text-align: center !important;
+
+  img {
+    position: relative;
+    top: -13em;
+    left: 0em;
+  }
+
   span {
     margin: auto;
     display: block;

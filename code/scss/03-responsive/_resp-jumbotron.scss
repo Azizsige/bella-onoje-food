@@ -1,11 +1,9 @@
 .jumbotron {
   @include respond(xs) {
-    justify-content: flex-start;
     height: 90vh !important;
     width: 123% !important;
     position: relative;
     top: 6em;
-    align-items: normal !important;
   }
 
   @include respond(sm) {
@@ -13,17 +11,13 @@
     width: 123% !important;
     position: relative;
     top: 6em;
-    justify-content: flex-start;
-    align-items: normal !important;
   }
 
   @include respond(md) {
-    height: 82vh !important;
+    height: 82vh;
     width: 123% !important;
     position: relative;
     top: 6em;
-    justify-content: flex-start;
-    align-items: normal !important;
   }
 
   .jumbotron-thumb {

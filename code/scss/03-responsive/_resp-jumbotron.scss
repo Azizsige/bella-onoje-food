@@ -1,23 +1,26 @@
 .jumbotron {
   @include respond(xs) {
-    height: 90vh !important;
+    height: 83vh !important;
     width: 100% !important;
     position: relative;
     top: 6em;
+    justify-content: normal;
   }
 
   @include respond(sm) {
-    height: 90vh !important;
+    height: 65vh !important;
     width: 100% !important;
     position: relative;
     top: 6em;
+    justify-content: normal;
   }
 
   @include respond(md) {
-    height: 82vh;
+    height: 70vh !important;
     width: 100% !important;
     position: relative;
     top: 6em;
+    justify-content: normal;
   }
 
   .jumbotron-thumb {
@@ -57,7 +60,7 @@
       }
 
       @include respond(sm) {
-        font-size: 2em;
+        font-size: 1.5em;
         margin: 0.5em 0 0.5em 0 !important;
       }
 
@@ -73,11 +76,11 @@
       }
 
       @include respond(sm) {
-        font-size: 1.1em !important;
+        font-size: 1em !important;
       }
 
       @include respond(md) {
-        font-size: 1.1em !important;
+        font-size: 1em !important;
       }
     }
   }
@@ -89,7 +92,6 @@
     }
 
     @include respond(sm) {
-      flex-direction: column;
       display: flex !important;
       justify-content: center !important;
       align-items: center;
@@ -97,7 +99,6 @@
     }
 
     @include respond(md) {
-      flex-direction: column;
       display: flex !important;
       justify-content: center !important;
       align-items: center;

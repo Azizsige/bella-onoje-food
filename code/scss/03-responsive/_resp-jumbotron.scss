@@ -85,6 +85,7 @@
   &-button {
     @include respond(xs) {
       z-index: 0 !important;
+      display: flex !important;
     }
 
     @include respond(sm) {
@@ -103,36 +104,57 @@
       z-index: 0 !important;
     }
 
-    &__transparent {
+    &__orange {
       @include respond(xs) {
-        margin: auto !important;
-        border: 1px solid #FA4A0C !important;
-        margin-top: 1em !important;
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important;
       }
 
       @include respond(sm) {
-        margin: auto !important;
-        border: 1px solid #FA4A0C !important;
-        margin-top: 1em !important;
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important
       }
 
       @include respond(md) {
-        margin: auto !important;
-        border: 1px solid #FA4A0C !important;
-        margin-top: 1em !important;
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important
+      }
+    }
+
+    &__transparent {
+      @include respond(xs) {
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important;
+        border: 1px solid $primary-color;
+      }
+
+      @include respond(sm) {
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important
+      }
+
+      @include respond(md) {
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important
       }
 
       a {
         @include respond(xs) {
-          color: $primary-color !important;
+          color: $alternate-colorSecondary !important;
         }
 
         @include respond(sm) {
-          color: $primary-color !important;
+          color: $alternate-colorSecondary !important;
         }
 
         @include respond(md) {
-          color: $primary-color !important;
+          color: $alternate-colorSecondary !important;
         }
       }
 

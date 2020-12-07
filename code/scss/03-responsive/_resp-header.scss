@@ -111,17 +111,20 @@ header {
 
     &.open {
       @include respond(xs) {
-        width: 73%;
+        height: 100vh !important;
+        width: 55%;
         transform: translateX(8.5em) !important;
       }
 
       @include respond(sm) {
-        width: 73%;
+        height: 100vh !important;
+        width: 55%;
         transform: translateX(8.5em) !important;
       }
 
       @include respond(md) {
-        width: 73%;
+        height: 100vh !important;
+        width: 55%;
         transform: translateX(8.5em) !important;
       }
     }

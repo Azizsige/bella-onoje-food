@@ -1,6 +1,11 @@
 .procedure {
-  @include respond(xs) {
-    &-headline {
+  @include respond(xs){
+    position: relative; 
+    top: 3em;
+  }
+
+  &-headline{
+    @include respond(xs){
       text-align: center !important;
     }
   }
@@ -12,8 +17,16 @@
 
     &__image {
       img {
-        width: 156%;
+        @include respond(xs) {
+          width: 130% !important;
+          position: relative !important;
+          left: -1em !important;
+        }
       }
+    }
+
+    &__explanation {
+      margin: 0 !important;
     }
   }
 }

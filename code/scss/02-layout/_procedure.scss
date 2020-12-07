@@ -15,6 +15,7 @@
     margin: 0 3em;
 
     &__explanation{
+      margin-left: 7em;
       h5 {
         @include font('Monserrat', 700, 36px, $primary-color);
         margin: 0;
@@ -30,5 +31,6 @@
         margin-right: 2em;
       }
     }
+
   }
 }

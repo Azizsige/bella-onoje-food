@@ -81,13 +81,13 @@ header {
       margin: 0;
       padding: 0;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start !important;
       justify-content: space-evenly;
       position: absolute;
       top: 0;
       right: 0;
       left: 0;
-      height: 123vh !important;
+      height: 100vh !important;
       transform: translateX(100%);
       background-color: #5a4d70;
       transition: transform 0.3s ease-in-out;
@@ -97,13 +97,13 @@ header {
       margin: 0;
       padding: 0;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start !important;
       justify-content: space-evenly;
       position: absolute;
       top: 0;
       right: 0;
       left: 0;
-      height: 123vh !important;
+      height: 100vh !important;
       transform: translateX(100%);
       background-color: #5a4d70;
       transition: transform 0.3s ease-in-out;
@@ -113,24 +113,31 @@ header {
       @include respond(xs) {
         height: 100vh !important;
         width: 55%;
-        transform: translateX(8.5em) !important;
+        transform: translateX(9.5em) !important;
       }
 
       @include respond(sm) {
         height: 100vh !important;
         width: 55%;
-        transform: translateX(8.5em) !important;
+        transform: translateX(10.5em) !important;
       }
 
       @include respond(md) {
         height: 100vh !important;
-        width: 55%;
-        transform: translateX(8.5em) !important;
+        width: 70%;
+        transform: translateX(11.5em) !important;
       }
     }
   }
 
   li {
+    @include respond(sm) {
+      margin-left: 1.5em;
+    }
+    @include respond(md) {
+      margin-left: 1.5em;
+    }
+
     a {
       @include respond(xs) {
         color: #ffffff !important;

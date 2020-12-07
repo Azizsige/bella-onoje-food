@@ -95,7 +95,7 @@
       display: flex !important;
       justify-content: center !important;
       align-items: center;
-      z-index: 0 !important;
+      z-index: 2 !important;
     }
 
     @include respond(md) {

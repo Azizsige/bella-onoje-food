@@ -26,6 +26,15 @@ header {
     align-items: center;
   }
 
+  @include respond(lg) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1em !important;
+    align-items: center;
+  }
+
   img {
     @include respond(xs) {
       width: 130px !important;
@@ -44,6 +53,12 @@ header {
       height: 50px !important;
       margin-left: -.7em;
     }
+
+    @include respond(lg) {
+      width: 130px !important;
+      height: 50px !important;
+      margin-left: -.7em;
+    }
   }
 
   .menu-btn {
@@ -58,6 +73,10 @@ header {
     @include respond(md) {
       display: flex !important;
     }
+
+    @include respond(lg) {
+      display: flex !important;
+    }
   }
 
   .menu-items {
@@ -65,7 +84,7 @@ header {
       margin: 0;
       padding: 0;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start !important;
       justify-content: space-evenly;
       position: absolute;
       top: 0;
@@ -109,32 +128,59 @@ header {
       transition: transform 0.3s ease-in-out;
     }
 
+    @include respond(lg) {
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      align-items: flex-start !important;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100vh !important;
+      transform: translateX(100%);
+      background-color: #5a4d70;
+      transition: transform 0.3s ease-in-out;
+    }
+
     &.open {
       @include respond(xs) {
         height: 100vh !important;
         width: 55%;
-        transform: translateX(9.5em) !important;
+        transform: translateX(83%) !important;
       }
 
       @include respond(sm) {
         height: 100vh !important;
         width: 55%;
-        transform: translateX(10.5em) !important;
+        transform: translateX(87%) !important;
       }
 
       @include respond(md) {
         height: 100vh !important;
         width: 70%;
-        transform: translateX(11.5em) !important;
+        transform: translateX(90%) !important;
+      }
+      @include respond(lg) {
+        height: 100vh !important;
+        width: 70%;
+        transform: translateX(90%) !important;
       }
     }
   }
 
   li {
+    @include respond(xs) {
+      margin-left: 1.5em;
+    }
     @include respond(sm) {
       margin-left: 1.5em;
     }
     @include respond(md) {
+      margin-left: 1.5em;
+    }
+    @include respond(lg) {
       margin-left: 1.5em;
     }
 
@@ -171,19 +217,15 @@ header {
         height: 100%;
         padding: 0 !important;
       }
-
-      &:hover {
-        @include respond(xs) {
-          color: $secondary-color;
-        }
-
-        @include respond(sm) {
-          color: $secondary-color;
-        }
-
-        @include respond(md) {
-          color: $secondary-color;
-        }
+      @include respond(lg) {
+        color: #ffffff !important;
+        font-size: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
       }
     }
   }

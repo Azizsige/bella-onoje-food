@@ -8,7 +8,7 @@
   }
 
   @include respond(sm) {
-    height: 65vh !important;
+    height: 315px !important;
     width: 100% !important;
     position: relative;
     top: 6em;
@@ -16,7 +16,14 @@
   }
 
   @include respond(md) {
-    height: 70vh !important;
+    height: 360px !important;
+    width: 100% !important;
+    position: relative;
+    top: 6em;
+    justify-content: normal;
+  }
+  @include respond(lg) {
+    height: 325px !important;
     width: 100% !important;
     position: relative;
     top: 6em;
@@ -38,6 +45,10 @@
       margin: 0 !important;
       margin-top: 3em !important;
     }
+    @include respond(lg) {
+      margin: 0 !important;
+      margin-top: 3em !important;
+    }
 
     h4 {
       @include respond(xs) {
@@ -49,6 +60,9 @@
       }
 
       @include respond(md) {
+        font-size: 20px;
+      }
+      @include respond(lg) {
         font-size: 20px;
       }
     }
@@ -68,6 +82,10 @@
         font-size: 2em;
         margin: 0.5em 0 0.5em 0 !important;
       }
+      @include respond(lg) {
+        font-size: 2em;
+        margin: 0.5em 0 0.5em 0 !important;
+      }
     }
 
     h5 {
@@ -80,6 +98,9 @@
       }
 
       @include respond(md) {
+        font-size: 1em !important;
+      }
+      @include respond(lg) {
         font-size: 1em !important;
       }
     }
@@ -95,10 +116,16 @@
       display: flex !important;
       justify-content: center !important;
       align-items: center;
-      z-index: 2 !important;
+      z-index: 0 !important;
     }
 
     @include respond(md) {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center;
+      z-index: 0 !important;
+    }
+    @include respond(lg) {
       display: flex !important;
       justify-content: center !important;
       align-items: center;
@@ -119,6 +146,11 @@
       }
 
       @include respond(md) {
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important
+      }
+      @include respond(lg) {
         width: 100px !important;
         height: 38px !important;
         font-size: 1em !important
@@ -144,6 +176,11 @@
         height: 38px !important;
         font-size: 1em !important
       }
+      @include respond(lg) {
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important
+      }
 
       a {
         @include respond(xs) {
@@ -157,19 +194,8 @@
         @include respond(md) {
           color: $alternate-colorSecondary !important;
         }
-      }
-
-      &:hover {
-        @include respond(xs) {
-          background-color: $alternate-colorSecondary;
-        }
-
-        @include respond(sm) {
-          background-color: $alternate-colorSecondary;
-        }
-
-        @include respond(md) {
-          background-color: $alternate-colorSecondary;
+        @include respond(lg) {
+          color: $alternate-colorSecondary !important;
         }
       }
     }

@@ -1,21 +1,21 @@
 .jumbotron {
   @include respond(xs) {
     height: 90vh !important;
-    width: 123% !important;
+    width: 100% !important;
     position: relative;
     top: 6em;
   }
 
   @include respond(sm) {
     height: 90vh !important;
-    width: 123% !important;
+    width: 100% !important;
     position: relative;
     top: 6em;
   }
 
   @include respond(md) {
     height: 82vh;
-    width: 123% !important;
+    width: 100% !important;
     position: relative;
     top: 6em;
   }

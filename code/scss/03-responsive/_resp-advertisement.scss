@@ -1,0 +1,59 @@
+.advertisement {
+
+  &-content {
+    &__text {
+      h3 {
+        @include respond(xs) {
+          font-size: 1.5em;
+        }
+
+        @include respond(sm) {
+          font-size: 1.5em;
+        }
+
+        @include respond(md) {
+          font-size: 1.5em;
+        }
+
+        @include respond(lg) {
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    &__btn {
+      @include respond(xs) {
+        display: flex;
+        justify-content: center;
+      }
+      @include respond(sm) {
+        display: flex;
+        justify-content: center;
+      }
+      @include respond(md) {
+        display: flex;
+        justify-content: center;
+      }
+      @include respond(lg) {
+        display: flex;
+        justify-content: center;
+      }
+
+      &--orange,
+      &--transparent {
+        @include respond(xs) {
+          width: 102px;
+        }
+        @include respond(sm) {
+          width: 102px;
+        }
+        @include respond(md) {
+          width: 102px;
+        }
+        @include respond(lg) {
+          width: 102px;
+        }
+      }
+    }
+  }
+}

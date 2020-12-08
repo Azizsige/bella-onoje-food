@@ -1,0 +1,42 @@
+.account {
+  width: 100%;
+  height: 806px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-headline {
+    margin-top: 3em;
+
+    h3 {
+      @include font("Poppins", 600, 44px, $alternate-colorDefault)
+    }
+  }
+
+  &-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__thumbnail {
+      margin-left: 7em;
+    }
+
+    &__text {
+      margin-right: 7em;
+      h4 {
+        @include font("Monserrat", 700, 24px, $primary-color);
+        margin-bottom: 1em;
+      }
+
+      h3 {
+        @include font("Monserrat", 700, 40px, $secondary-color);
+        margin-bottom: 1em;
+      }
+
+      h5 {
+        @include font("Monserrat", 500, 24px, $text-color)
+      }
+    }
+  }
+}

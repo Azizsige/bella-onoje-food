@@ -49,30 +49,34 @@
   span {
     @include respond(xs) {
       position: relative;
+      top: 6.5em;
       left: 0em;
       margin-top: 0em !important;
-      width: 75% !important;
+      width: 90% !important;
     }
 
     @include respond(sm) {
       position: relative;
+      top: 6.5em;
       left: 0em;
       margin-top: 0em !important;
-      width: 75% !important;
+      width: 90% !important;
     }
 
     @include respond(md) {
       position: relative;
+      top: 6.5em;
       left: 0em;
       margin-top: 0em !important;
-      width: 75% !important;
+      width: 90% !important;
     }
 
     @include respond(lg) {
       position: relative;
+      top: 6.5em;
       left: 0em;
       margin-top: 0em !important;
-      width: 75% !important;
+      width: 90% !important;
     }
   }
 }

@@ -626,27 +626,31 @@ body {
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .imageThumb span {
     position: relative;
+    top: 6.5em;
     left: 0em;
     margin-top: 0em !important;
-    width: 75% !important; } }
+    width: 90% !important; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   .imageThumb span {
     position: relative;
+    top: 6.5em;
     left: 0em;
     margin-top: 0em !important;
-    width: 75% !important; } }
+    width: 90% !important; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .imageThumb span {
     position: relative;
+    top: 6.5em;
     left: 0em;
     margin-top: 0em !important;
-    width: 75% !important; } }
+    width: 90% !important; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .imageThumb span {
     position: relative;
+    top: 6.5em;
     left: 0em;
     margin-top: 0em !important;
-    width: 75% !important; } }
+    width: 90% !important; } }
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .account {
@@ -669,6 +673,18 @@ body {
     top: 4em;
     height: auto; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
+  .account-headline {
+    margin: 3em 0 0 0; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .account-headline {
+    margin: 3em 0 0 0; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .account-headline {
+    margin: 3em 0 0 0; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .account-headline {
+    margin: 3em 0 0 0; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
   .account-headline h3 {
     text-align: center;
     font-size: 1.7em; } }
@@ -703,19 +719,23 @@ body {
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .account-row__thumbnail {
     width: 100%;
-    margin: 0; } }
+    margin: 0;
+    order: 2; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   .account-row__thumbnail {
     width: 100%;
-    margin: 0; } }
+    margin: 0;
+    order: 2 !important; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .account-row__thumbnail {
     width: 100%;
-    margin: 0; } }
+    margin: 0;
+    order: 2 !important; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .account-row__thumbnail {
     width: 100%;
-    margin: 0; } }
+    margin: 0;
+    order: 2 !important; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .account-row__thumbnail img {
     position: relative;
@@ -738,20 +758,24 @@ body {
     left: 11%; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .account-row__text {
-    margin: 0;
-    text-align: center; } }
+    margin: 7em 0 0 0;
+    text-align: center;
+    order: 1; } }
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   .account-row__text {
-    margin: 0;
-    text-align: center; } }
+    margin: 7em 0 0 0;
+    text-align: center;
+    order: 1; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .account-row__text {
-    margin: 0;
-    text-align: center; } }
+    margin: 7em 0 0 0;
+    text-align: center;
+    order: 1; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .account-row__text {
-    margin: 0;
-    text-align: center; } }
+    margin: 7em 0 0 0;
+    text-align: center;
+    order: 1; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   .account-row__text h4,
   .account-row__text h3,
@@ -799,6 +823,151 @@ body {
     margin-bottom: .7em; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .account-row__text h3 {
+    margin-bottom: .7em; } }
+
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .explore {
+    position: relative;
+    top: 4em;
+    height: auto; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .explore {
+    position: relative;
+    top: 4em;
+    height: auto; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .explore {
+    position: relative;
+    top: 4em;
+    height: auto; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .explore {
+    position: relative;
+    top: 4em;
+    height: auto; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .explore-row {
+    width: 100%;
+    flex-direction: column; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .explore-row {
+    width: 100%;
+    flex-direction: column; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .explore-row {
+    width: 100%;
+    flex-direction: column; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .explore-row {
+    width: 100%;
+    flex-direction: column; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .explore-row__thumbnail {
+    width: 100%;
+    margin: 0;
+    order: 2; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .explore-row__thumbnail {
+    width: 100%;
+    margin: 0;
+    order: 2; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .explore-row__thumbnail {
+    width: 100%;
+    margin: 0;
+    order: 2; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .explore-row__thumbnail {
+    width: 100%;
+    margin: 0;
+    order: 2; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .explore-row__thumbnail img {
+    position: relative;
+    width: 89%;
+    left: 2em; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .explore-row__thumbnail img {
+    position: relative;
+    width: 89%;
+    left: 2em; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .explore-row__thumbnail img {
+    position: relative;
+    width: 89%;
+    left: 11%; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .explore-row__thumbnail img {
+    position: relative;
+    width: 89%;
+    left: 11%; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .explore-row__text {
+    margin: 7em 0 0 0;
+    text-align: center;
+    order: 1; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .explore-row__text {
+    margin: 7em 0 0 0;
+    text-align: center;
+    order: 1; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .explore-row__text {
+    margin: 7em 0 0 0;
+    text-align: center;
+    order: 1; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .explore-row__text {
+    margin: 7em 0 0 0;
+    text-align: center;
+    order: 1; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .explore-row__text h4,
+  .explore-row__text h3,
+  .explore-row__text h5 {
+    font-size: 1.7em !important;
+    margin: 0 .7em; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .explore-row__text h4,
+  .explore-row__text h3,
+  .explore-row__text h5 {
+    font-size: 1.7em !important;
+    margin: 0 .7em; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .explore-row__text h4,
+  .explore-row__text h3,
+  .explore-row__text h5 {
+    font-size: 1.7em !important;
+    margin: 0 .7em; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .explore-row__text h4,
+  .explore-row__text h3,
+  .explore-row__text h5 {
+    font-size: 1.7em !important;
+    margin: 0 .7em; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .explore-row__text h4 {
+    margin-bottom: .7em; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .explore-row__text h4 {
+    margin-bottom: .7em; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .explore-row__text h4 {
+    margin-bottom: .7em; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .explore-row__text h4 {
+    margin-bottom: .7em; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .explore-row__text h3 {
+    margin-bottom: .7em; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .explore-row__text h3 {
+    margin-bottom: .7em; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .explore-row__text h3 {
+    margin-bottom: .7em; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .explore-row__text h3 {
     margin-bottom: .7em; } }
 
 /*# sourceMappingURL=style.css.map */

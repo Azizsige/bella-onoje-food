@@ -24,6 +24,22 @@
   }
 
   &-headline {
+    @include respond(xs) {
+      margin: 3em 0 0 0;
+    }
+
+    @include respond(sm) {
+      margin: 3em 0 0 0;
+    }
+
+    @include respond(md) {
+      margin: 3em 0 0 0;
+    }
+
+    @include respond(lg) {
+      margin: 3em 0 0 0;
+    }
+
     h3 {
       @include respond(xs) {
         text-align: center;
@@ -72,21 +88,25 @@
       @include respond(xs) {
         width: 100%;
         margin: 0;
+        order: 2;
       }
 
       @include respond(sm) {
         width: 100%;
         margin: 0;
+        order: 2 !important;
       }
 
       @include respond(md) {
         width: 100%;
         margin: 0;
+        order: 2 !important;
       }
 
       @include respond(lg) {
         width: 100%;
         margin: 0;
+        order: 2 !important;
       }
 
       img {
@@ -118,23 +138,27 @@
 
     &__text {
       @include respond(xs) {
-        margin: 0;
+        margin: 7em 0 0 0;
         text-align: center;
+        order: 1;
       }
 
       @include respond(sm) {
-        margin: 0;
+        margin: 7em 0 0 0;
         text-align: center;
+        order: 1;
       }
 
       @include respond(md) {
-        margin: 0;
+        margin: 7em 0 0 0;
         text-align: center;
+        order: 1;
       }
 
       @include respond(lg) {
-        margin: 0;
+        margin: 7em 0 0 0;
         text-align: center;
+        order: 1;
       }
 
       h4,

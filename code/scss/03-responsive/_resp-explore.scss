@@ -1,0 +1,185 @@
+.explore {
+  @include respond(xs) {
+    position: relative;
+    top: 4em;
+    height: auto;
+  }
+
+  @include respond(sm) {
+    position: relative;
+    top: 4em;
+    height: auto;
+  }
+
+  @include respond(md) {
+    position: relative;
+    top: 4em;
+    height: auto;
+  }
+
+  @include respond(lg) {
+    position: relative;
+    top: 4em;
+    height: auto;
+  }
+
+  &-row {
+    @include respond(xs) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    @include respond(sm) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    @include respond(md) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    @include respond(lg) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &__thumbnail {
+      @include respond(xs) {
+        width: 100%;
+        margin: 0;
+        order: 2;
+      }
+
+      @include respond(sm) {
+        width: 100%;
+        margin: 0;
+        order: 2;
+      }
+
+      @include respond(md) {
+        width: 100%;
+        margin: 0;
+        order: 2;
+      }
+
+      @include respond(lg) {
+        width: 100%;
+        margin: 0;
+        order: 2;
+      }
+
+      img {
+        @include respond(xs) {
+          position: relative;
+          width: 89%;
+          left: 2em;
+        }
+
+        @include respond(sm) {
+          position: relative;
+          width: 89%;
+          left: 2em;
+        }
+
+        @include respond(md) {
+          position: relative;
+          width: 89%;
+          left: 11%;
+        }
+
+        @include respond(lg) {
+          position: relative;
+          width: 89%;
+          left: 11%;
+        }
+      }
+    }
+
+    &__text {
+      @include respond(xs) {
+        margin: 7em 0 0 0;
+        text-align: center;
+        order: 1;
+      }
+
+      @include respond(sm) {
+        margin: 7em 0 0 0;
+        text-align: center;
+        order: 1;
+      }
+
+      @include respond(md) {
+        margin: 7em 0 0 0;
+        text-align: center;
+        order: 1;
+      }
+
+      @include respond(lg) {
+        margin: 7em 0 0 0;
+        text-align: center;
+        order: 1;
+      }
+
+      h4,
+      h3,
+      h5 {
+        @include respond(xs) {
+          font-size: 1.7em !important;
+          margin: 0 .7em;
+        }
+
+        @include respond(sm) {
+          font-size: 1.7em !important;
+          margin: 0 .7em;
+        }
+
+        @include respond(md) {
+          font-size: 1.7em !important;
+          margin: 0 .7em;
+        }
+
+        @include respond(lg) {
+          font-size: 1.7em !important;
+          margin: 0 .7em;
+        }
+      }
+
+      h4 {
+        @include respond(xs) {
+          margin-bottom: .7em;
+        }
+
+        @include respond(sm) {
+          margin-bottom: .7em;
+        }
+
+        @include respond(md) {
+          margin-bottom: .7em;
+        }
+
+        @include respond(lg) {
+          margin-bottom: .7em;
+        }
+      }
+
+      h3 {
+        @include respond(xs) {
+          margin-bottom: .7em;
+        }
+
+        @include respond(sm) {
+          margin-bottom: .7em;
+        }
+
+        @include respond(md) {
+          margin-bottom: .7em;
+        }
+
+        @include respond(lg) {
+          margin-bottom: .7em;
+        }
+      }
+    }
+  }
+}

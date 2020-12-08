@@ -261,6 +261,63 @@ body {
         font-size: 24px;
         color: #737373; }
 
+.advertisement {
+  width: 100%;
+  height: 516px;
+  background-image: url("./../../assets/advertisement.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .advertisement-content {
+    text-align: center; }
+    .advertisement-content__text h3 {
+      font-family: "Monserrat", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      color: #fff;
+      margin: 0 0 .7em 0; }
+    .advertisement-content__text p {
+      font-family: "Monserrat", sans-serif;
+      font-weight: lighter;
+      font-size: 24px;
+      color: #fff;
+      margin: 0 0 2em 0; }
+    .advertisement-content__btn--orange {
+      width: 142px;
+      height: 62px;
+      border-radius: 10px;
+      font-family: "Monserrat", sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+      background-color: #FA4A0C;
+      border: 1px solid transparent;
+      margin-right: 1em; }
+      .advertisement-content__btn--orange:hover {
+        cursor: pointer; }
+      .advertisement-content__btn--orange a {
+        color: #fff;
+        text-decoration: none; }
+    .advertisement-content__btn--transparent {
+      width: 142px;
+      height: 62px;
+      border-radius: 10px;
+      font-family: "Monserrat", sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+      background-color: transparent;
+      border: 1px solid #fff; }
+      .advertisement-content__btn--transparent:hover {
+        background-color: #FA4A0C;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid transparent; }
+      .advertisement-content__btn--transparent a {
+        color: #fff;
+        text-decoration: none; }
+
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   header {
     position: fixed;

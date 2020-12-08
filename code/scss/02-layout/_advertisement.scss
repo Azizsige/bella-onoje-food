@@ -1,8 +1,67 @@
 .advertisement {
   width: 100%;
   height: 516px;
-  background-image: url('./../../../assets/advertisement.png');
+  background-image: url('#{$path}advertisement.png');
   background-size: cover;
-  object-fit: cover;
-  object-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    text-align: center;
+
+    &__text {
+      h3 {
+        @include font("Monserrat", 700, 40px, $alternate-colorSecondary);
+        margin: 0 0 .7em 0;
+      }
+
+      p {
+        @include font("Monserrat", lighter, 24px, $alternate-colorSecondary);
+        margin: 0 0 2em 0;
+      }
+    }
+
+    &__btn {
+      &--orange {
+        width: 142px;
+        height: 62px;
+        border-radius: 10px;
+        @include font("Monserrat", bold, 16px, $alternate-colorSecondary);
+        background-color: $primary-color;
+        border: 1px solid transparent;
+        margin-right: 1em;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        a {
+          color: $alternate-colorSecondary;
+          text-decoration: none;
+        }
+      }
+
+      &--transparent {
+        width: 142px;
+        height: 62px;
+        border-radius: 10px;
+        @include font("Monserrat", bold, 16px, $alternate-colorSecondary);
+        background-color: transparent;
+        border: 1px solid $alternate-colorSecondary;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $alternate-colorSecondary;
+          cursor: pointer;
+          border: 1px solid transparent;
+        }
+
+        a {
+          color: $alternate-colorSecondary;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,5 @@
+.footer {
+  @include respond(xs) {
+    flex-direction: column;
+  }
+}

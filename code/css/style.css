@@ -1257,4 +1257,8 @@ body {
   .advertisement-content__btn--orange, .advertisement-content__btn--transparent {
     width: 102px; } }
 
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .footer {
+    flex-direction: column; } }
+
 /*# sourceMappingURL=style.css.map */

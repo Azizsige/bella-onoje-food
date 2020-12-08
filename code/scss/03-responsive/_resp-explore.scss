@@ -1,25 +1,17 @@
 .explore {
   @include respond(xs) {
-    position: relative;
-    top: 4em;
     height: auto;
   }
 
   @include respond(sm) {
-    position: relative;
-    top: 4em;
     height: auto;
   }
 
   @include respond(md) {
-    position: relative;
-    top: 4em;
     height: auto;
   }
 
   @include respond(lg) {
-    position: relative;
-    top: 4em;
     height: auto;
   }
 
@@ -33,7 +25,6 @@
       width: 100%;
       flex-direction: column;
     }
-
     @include respond(md) {
       width: 100%;
       flex-direction: column;
@@ -98,25 +89,25 @@
 
     &__text {
       @include respond(xs) {
-        margin: 7em 0 0 0;
+        margin: 5em 0 0 0;
         text-align: center;
         order: 1;
       }
 
       @include respond(sm) {
-        margin: 7em 0 0 0;
+        margin: 5em 0 0 0;
         text-align: center;
         order: 1;
       }
 
       @include respond(md) {
-        margin: 7em 0 0 0;
+        margin: 5em 0 0 0;
         text-align: center;
         order: 1;
       }
 
       @include respond(lg) {
-        margin: 7em 0 0 0;
+        margin: 5em 0 0 0;
         text-align: center;
         order: 1;
       }

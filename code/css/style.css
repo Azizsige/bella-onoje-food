@@ -318,6 +318,31 @@ body {
         color: #fff;
         text-decoration: none; }
 
+.footer {
+  height: 223px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer-content {
+    width: 1210px;
+    height: 133px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .footer-content__sosmed {
+      margin-top: 3em; }
+      .footer-content__sosmed .fab {
+        width: 50px !important;
+        height: 50px !important;
+        color: #FA4A0C !important;
+        align-self: baseline; }
+    .footer-content__copyright, .footer-content__copyright a {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700px;
+      font-size: 15px;
+      color: #5C5C5C; }
+
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   header {
     position: fixed;

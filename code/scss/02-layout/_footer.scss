@@ -1,0 +1,32 @@
+.footer {
+  height: 223px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    width: 1210px;
+    height: 133px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__sosmed {
+      margin-top: 3em;
+
+      .fab {
+        width: 50px !important;
+        height: 50px !important;
+        color: $primary-color !important;
+        align-self: baseline;
+      }
+    }
+
+    &__copyright,
+    &__copyright a {
+      @include font("Roboto", 700px, 15px, #5C5C5C)
+    }
+  }
+
+}

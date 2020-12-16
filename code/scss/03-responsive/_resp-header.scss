@@ -106,7 +106,7 @@ header {
     right: 0;
     left: 0;
     transform: translateX(183%);
-    background-color: yellow;
+    background-color: yellow !important;
     transition: all 0.3s ease-in-out;
     }
 
@@ -121,7 +121,7 @@ header {
     right: 0;
     left: 0;
     transform: translateX(183%);
-    background-color: green;
+    background-color: green !important;
     transition: all 0.3s ease-in-out;
     }
 
@@ -136,7 +136,7 @@ header {
     right: 0;
     left: 0;
     transform: translateX(183%);
-    background-color: blue;
+    background-color: blue !important;
     transition: all 0.3s ease-in-out;
     }
 

@@ -433,7 +433,7 @@ body {
     right: 0;
     left: 0;
     transform: translateX(183%);
-    background-color: yellow;
+    background-color: yellow !important;
     transition: all 0.3s ease-in-out; } }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   header .menu-items {
@@ -447,7 +447,7 @@ body {
     right: 0;
     left: 0;
     transform: translateX(183%);
-    background-color: green;
+    background-color: green !important;
     transition: all 0.3s ease-in-out; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   header .menu-items {
@@ -461,7 +461,7 @@ body {
     right: 0;
     left: 0;
     transform: translateX(183%);
-    background-color: blue;
+    background-color: blue !important;
     transition: all 0.3s ease-in-out; } }
 @media only screen and (min-width: 300px) and (max-width: 319px) {
   header .menu-items.open {

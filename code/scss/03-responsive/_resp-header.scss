@@ -132,7 +132,7 @@ header {
       margin: 0;
       padding: 0;
       flex-direction: column;
-      align-items: flex-start !important;
+      align-items: center !important;
       justify-content: space-evenly;
       position: absolute;
       top: 0;
@@ -181,7 +181,7 @@ header {
       margin-left: 1.5em;
     }
     @include respond(lg) {
-      margin-left: 1.5em;
+      margin-left: -6.5em;
     }
 
     a {
@@ -219,7 +219,7 @@ header {
       }
       @include respond(lg) {
         color: #ffffff !important;
-        font-size: 5vh;
+        font-size: 1.5em !important;
         display: flex;
         justify-content: center;
         align-items: center;

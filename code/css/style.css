@@ -1258,7 +1258,60 @@ body {
     width: 102px; } }
 
 @media only screen and (min-width: 300px) and (max-width: 319px) {
-  .footer {
-    flex-direction: column; } }
+  .footer-content {
+    flex-direction: column !important;
+    width: auto !important;
+    text-align: center; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .footer-content {
+    flex-direction: column !important;
+    width: auto !important;
+    text-align: center; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .footer-content {
+    flex-direction: column !important;
+    width: auto !important;
+    text-align: center; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-content {
+    flex-direction: column !important;
+    width: auto !important;
+    text-align: center; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .footer-content__img {
+    display: none; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .footer-content__img {
+    display: none; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .footer-content__img {
+    display: none; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-content__img {
+    display: none; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .footer-content__sosmed .fab::before {
+    font-size: 40px; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .footer-content__sosmed .fab::before {
+    font-size: 40px; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .footer-content__sosmed .fab::before {
+    font-size: 40px; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-content__sosmed .fab::before {
+    font-size: 40px; } }
+@media only screen and (min-width: 300px) and (max-width: 319px) {
+  .footer-content__sosmed {
+    margin: 0 0 1em 0; } }
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .footer-content__sosmed {
+    margin: 0 0 1em 0; } }
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .footer-content__sosmed {
+    margin: 0 0 1em 0; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-content__sosmed {
+    margin: 0 0 1em 0; } }
 
 /*# sourceMappingURL=style.css.map */

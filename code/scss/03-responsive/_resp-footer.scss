@@ -1,5 +1,69 @@
 .footer {
-  @include respond(xs) {
-    flex-direction: column;
+  &-content {
+    @include respond(xs) {
+      flex-direction: column !important;
+      width: auto !important;
+      text-align: center;
+    }
+    @include respond(sm) {
+      flex-direction: column !important;
+      width: auto !important;
+      text-align: center;
+    }
+    @include respond(md) {
+      flex-direction: column !important;
+      width: auto !important;
+      text-align: center;
+    }
+    @include respond(lg) {
+      flex-direction: column !important;
+      width: auto !important;
+      text-align: center;
+    }
+
+    &__img {
+      @include respond(xs){
+        display: none;
+      }
+      @include respond(sm){
+        display: none;
+      }
+      @include respond(md){
+        display: none;
+      }
+      @include respond(lg){
+        display: none;
+      }
+    }
+
+    &__sosmed {
+      .fab::before {
+        @include respond(xs){
+          font-size: 40px;
+        }
+        @include respond(sm){
+          font-size: 40px;
+        }
+        @include respond(md){
+          font-size: 40px;
+        }
+        @include respond(lg){
+          font-size: 40px;
+        }
+      }
+
+      @include respond(xs){
+        margin: 0 0 1em 0;
+      }
+      @include respond(sm){
+        margin: 0 0 1em 0;
+      }
+      @include respond(md){
+        margin: 0 0 1em 0;
+      }
+      @include respond(lg){
+        margin: 0 0 1em 0;
+      }
+    }
   }
 }

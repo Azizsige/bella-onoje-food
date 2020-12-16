@@ -153,19 +153,19 @@ header {
 
       @include respond(sm) {
         height: 100vh !important;
-        width: 55%;
-        transform: translateX(87%) !important;
+        width: 65%;
+        transform: translateX(55%) !important;
       }
 
       @include respond(md) {
         height: 100vh !important;
-        width: 70%;
-        transform: translateX(90%) !important;
+        width: 65%;
+        transform: translateX(55%) !important;
       }
       @include respond(lg) {
         height: 100vh !important;
-        width: 70%;
-        transform: translateX(90%) !important;
+        width: 84%;
+        transform: translateX(51%) !important;
       }
     }
   }

@@ -26,7 +26,7 @@
     .menu-btn__lines::after {
       width: 1.5rem;
       height: 0.1rem;
-      background-color: #111111;
+      background-color: $primary-color;
       transition: all 0.5s ease-in-out;
     }
 
@@ -52,12 +52,12 @@
 
       .menu-btn__lines::before {
         transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-        background-color: #ffffff;
+        background-color: #FA4A0C;
       }
 
       .menu-btn__lines::after {
         transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
-        background-color: #ffffff;
+        background-color: #FA4A0C;
       }
     }
   }

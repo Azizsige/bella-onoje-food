@@ -20,6 +20,11 @@
       width: auto !important;
       text-align: center;
     }
+    @include respond(xl) {
+      flex-direction: column !important;
+      width: auto !important;
+      text-align: center;
+    }
 
     &__img {
       @include respond(xs){
@@ -32,6 +37,9 @@
         display: none;
       }
       @include respond(lg){
+        display: none;
+      }
+      @include respond(xl){
         display: none;
       }
     }
@@ -50,6 +58,9 @@
         @include respond(lg){
           font-size: 40px;
         }
+        @include respond(xl){
+          font-size: 40px;
+        }
       }
 
       @include respond(xs){
@@ -62,6 +73,9 @@
         margin: 0 0 1em 0;
       }
       @include respond(lg){
+        margin: 0 0 1em 0;
+      }
+      @include respond(xl){
         margin: 0 0 1em 0;
       }
     }

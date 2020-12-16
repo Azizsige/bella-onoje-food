@@ -29,6 +29,13 @@
     top: 6em;
     justify-content: normal;
   }
+  @include respond(xl) {
+    height: 325px !important;
+    width: 100% !important;
+    position: relative;
+    top: 6em;
+    justify-content: normal;
+  }
 
   .jumbotron-thumb {
     @include respond(xs) {
@@ -49,6 +56,10 @@
       margin: 0 !important;
       margin-top: 3em !important;
     }
+    @include respond(xl) {
+      margin: 0 !important;
+      margin-top: 3em !important;
+    }
 
     h4 {
       @include respond(xs) {
@@ -63,6 +74,9 @@
         font-size: 20px;
       }
       @include respond(lg) {
+        font-size: 20px;
+      }
+      @include respond(xl) {
         font-size: 20px;
       }
     }
@@ -86,6 +100,10 @@
         font-size: 2em;
         margin: 0.5em 0 0.5em 0 !important;
       }
+      @include respond(xl) {
+        font-size: 2em;
+        margin: 0.5em 0 0.5em 0 !important;
+      }
     }
 
     h5 {
@@ -101,6 +119,9 @@
         font-size: 1em !important;
       }
       @include respond(lg) {
+        font-size: 1em !important;
+      }
+      @include respond(xl) {
         font-size: 1em !important;
       }
     }
@@ -131,6 +152,12 @@
       align-items: center;
       z-index: 0 !important;
     }
+    @include respond(xl) {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center;
+      z-index: 0 !important;
+    }
 
     &__orange {
       @include respond(xs) {
@@ -151,6 +178,11 @@
         font-size: 1em !important
       }
       @include respond(lg) {
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important
+      }
+      @include respond(xl) {
         width: 100px !important;
         height: 38px !important;
         font-size: 1em !important
@@ -184,6 +216,12 @@
         font-size: 1em !important;
         border: 1px solid $alternate-colorSecondary;
       }
+      @include respond(xl) {
+        width: 100px !important;
+        height: 38px !important;
+        font-size: 1em !important;
+        border: 1px solid $alternate-colorSecondary;
+      }
 
       a {
         @include respond(xs) {
@@ -198,6 +236,9 @@
           color: $alternate-colorSecondary !important;
         }
         @include respond(lg) {
+          color: $alternate-colorSecondary !important;
+        }
+        @include respond(xl) {
           color: $alternate-colorSecondary !important;
         }
       }

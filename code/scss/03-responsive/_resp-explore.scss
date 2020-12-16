@@ -14,6 +14,9 @@
   @include respond(lg) {
     height: auto;
   }
+  @include respond(xl) {
+    height: auto;
+  }
 
   &-row {
     @include respond(xs) {
@@ -31,6 +34,10 @@
     }
 
     @include respond(lg) {
+      width: 100%;
+      flex-direction: column;
+    }
+    @include respond(xl) {
       width: 100%;
       flex-direction: column;
     }
@@ -59,6 +66,11 @@
         margin: 0;
         order: 2;
       }
+      @include respond(xl) {
+        width: 100%;
+        margin: 0;
+        order: 2;
+      }
 
       img {
         @include respond(xs) {
@@ -80,6 +92,11 @@
         }
 
         @include respond(lg) {
+          position: relative;
+          width: 89%;
+          left: 11%;
+        }
+        @include respond(xl) {
           position: relative;
           width: 89%;
           left: 11%;
@@ -111,6 +128,11 @@
         text-align: center;
         order: 1;
       }
+      @include respond(xl) {
+        margin: 5em 0 0 0;
+        text-align: center;
+        order: 1;
+      }
 
       h4,
       h3,
@@ -134,6 +156,10 @@
           font-size: 1.7em !important;
           margin: 0 .7em;
         }
+        @include respond(xl) {
+          font-size: 1.7em !important;
+          margin: 0 .7em;
+        }
       }
 
       h4 {
@@ -152,6 +178,9 @@
         @include respond(lg) {
           margin-bottom: .7em;
         }
+        @include respond(xl) {
+          margin-bottom: .7em;
+        }
       }
 
       h3 {
@@ -168,6 +197,9 @@
         }
 
         @include respond(lg) {
+          margin-bottom: .7em;
+        }
+        @include respond(xl) {
           margin-bottom: .7em;
         }
       }

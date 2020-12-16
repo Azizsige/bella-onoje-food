@@ -18,6 +18,9 @@
         @include respond(lg) {
           font-size: 1.5em;
         }
+        @include respond(xl) {
+          font-size: 1.5em;
+        }
       }
     }
 
@@ -38,6 +41,10 @@
         display: flex;
         justify-content: center;
       }
+      @include respond(xl) {
+        display: flex;
+        justify-content: center;
+      }
 
       &--orange,
       &--transparent {
@@ -51,6 +58,9 @@
           width: 102px;
         }
         @include respond(lg) {
+          width: 102px;
+        }
+        @include respond(xl) {
           width: 102px;
         }
       }

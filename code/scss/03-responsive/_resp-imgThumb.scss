@@ -19,6 +19,10 @@
     position: relative;
     top: 6em;
   }
+  @include respond(xl) {
+    position: relative;
+    top: 6em;
+  }
 
   img {
     @include respond(xs) {
@@ -40,6 +44,11 @@
     }
 
     @include respond(lg) {
+      top: 0em !important;
+      left: -0.7em;
+      width: 80% !important;
+    }
+    @include respond(xl) {
       top: 0em !important;
       left: -0.7em;
       width: 80% !important;
@@ -72,6 +81,13 @@
     }
 
     @include respond(lg) {
+      position: relative;
+      top: 6.5em;
+      left: 0em;
+      margin-top: 0em !important;
+      width: 90% !important;
+    }
+    @include respond(xl) {
       position: relative;
       top: 6.5em;
       left: 0em;
